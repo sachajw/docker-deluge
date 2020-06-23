@@ -1,0 +1,16 @@
+version: '2'
+services:
+  plex:
+    image: linuxserver/deluge
+    container_name: deluge
+    network_mode: host
+    restart: always
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Africa\Johannesburg
+      - UMASK_SET=022
+      - DELUGE_LOGLEVEL=error  
+    volumes:
+      - /config:/deluge/config
+      - /media:/media/store-e-500/media
