@@ -4,9 +4,9 @@ services:
     container_name: deluge
     image: linuxserver/deluge:latest
     ports:
-      - "8112"
-      - "56881-56889"
-      - "56890-57200"
+      - "8112:8112"
+      - "56881-56889:56881-56889"
+      - "56890-57200:56890-57200"
     network_mode: host
     restart: always
     environment:
