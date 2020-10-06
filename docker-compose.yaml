@@ -4,6 +4,10 @@ services:
     container_name: deluge
     image: linuxserver/deluge:latest
     network_mode: host
+    ports:
+      - "8112"
+      - "56881-56889"
+      - "56890-57200"
     restart: always
     environment:
       - PUID=1000
