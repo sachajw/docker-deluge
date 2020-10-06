@@ -12,5 +12,5 @@ services:
       - UMASK_SET=022
       - DELUGE_LOGLEVEL=error  
     volumes:
-      - /config:/deluge/config
-      - /downloads:/media/store-e-500/deluge/downloads
+      - /deluge/config:/deluge/config
+      - /deluge/downloads:/deluge/downloads
